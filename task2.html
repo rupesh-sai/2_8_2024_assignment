@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+          background-color: antiquewhite;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3,1fr);
+            height: 70vh;
+            gap: 10px;
+            width: 100%;
+            max-width: 800px;
+
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+        .brown{
+            background-color: brown;
+        }
+        .one{
+            grid-row: 1/4;
+        }
+        .two{
+            grid-column: 2/4;
+        }
+        .three{
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+        .four{
+            grid-row: 1/2;
+            grid-column: 4/5;
+        }
+        .five{
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        .six{
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+        .seven{
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        .eight{
+            grid-row: 3/4;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="green one"></div>
+        <div class="green two"></div>
+        <div class="green three"></div>
+        <div class="red four"></div>
+        <div class="red five"></div>
+        <div class="red six"></div>
+        <div class="brown seven"></div>
+        <div class="brown eight"></div>
+    </div>
+</body>
+</html>
